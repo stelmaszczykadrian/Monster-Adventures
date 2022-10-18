@@ -19,10 +19,14 @@ document.addEventListener("keydown", function (event){
     jump();
 });
 
-let checkIfLoose = setInterval(function(){
-    let monsterTop = (window.getComputedStyle(monster).getPropertyValue('top'));
-    let  stoneLeft = (window.getComputedStyle(stone).getPropertyValue('left'));
-    if (stoneLeft>0 && stoneLeft<50 && monsterTop<=
+var checkIfLoose = setInterval(function(){
+    let monsterTop = parseInt(window.getComputedStyle(monster).getPropertyValue('top'));
+    console.log(monsterTop)
+    let stoneLeft = parseInt(window.getComputedStyle(stone).getPropertyValue('left'));
+    //console.log(stoneLeft)
+    if (stoneLeft>40 && stoneLeft<90 && monsterTop>=170){
+        alert("You loose")
+    }
  },10);
 function initGame() {
 
