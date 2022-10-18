@@ -3,11 +3,13 @@ initGame();
 const monster = document.getElementById("monster");
 
 function jump (){
-    monster.classList.add("jump");
+    if (monster.classList != "jump") {
+        monster.classList.add("jump");
 
-    setTimeout(function () {
-        monster.classList.remove('jump')
-    }, 300);
+        setTimeout(function () {
+            monster.classList.remove("jump")
+        }, 300);
+    }
 }
 
 document.addEventListener("keydown", function (event){
