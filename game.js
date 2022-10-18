@@ -3,6 +3,8 @@ initGame();
 const monster = document.getElementById("monster");
 const stone = document.getElementById("stone")
 
+const score = document.getElementById("score")
+
 function jump (){
     if (monster.classList != "jump") {
         monster.classList.add("jump");
