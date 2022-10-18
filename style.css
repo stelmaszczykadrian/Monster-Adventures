@@ -45,7 +45,23 @@
 .jump{
     animation: jump 0.3s linear;
 }
-.score {
+h1 {
     margin-top: 40px;
     text-align: center;
+}
+
+#stone {
+    height: 120px;
+    width:100px;
+    position: relative;
+    top: 140px;
+    left: 620px;
+    background: url(img/rocks/rock2.png) right center;
+    background-size: cover;
+    animation: stone 2s infinite;
+}
+
+@keyframes stone {
+    0% {left: 620px;}
+    100%{left: -100px;}
 }
