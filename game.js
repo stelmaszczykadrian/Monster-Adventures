@@ -10,12 +10,14 @@ function jump (){
 
         setTimeout(function () {
             monster.classList.remove("jump")
-        }, 300);
+        }, 500);
     }
 }
 
 document.addEventListener("keydown", function (event){
-    jump();
+     if (event.code === 'Space'){
+         jump();
+     }
 });
 
 var checkIfLoose = setInterval(function(){
