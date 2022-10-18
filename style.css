@@ -45,3 +45,7 @@
 .jump{
     animation: jump 0.3s linear;
 }
+.score {
+    margin-top: 40px;
+    text-align: center;
+}
