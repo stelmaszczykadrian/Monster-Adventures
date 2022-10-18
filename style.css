@@ -1,19 +1,47 @@
 .game{
     background-image: url(img/forest.png);
-    background-size: 600px 200px;
-    width: 600px;
-    height: 200px;
+    background-size: 700px 300px;
+    width: 700px;
+    height: 300px;
     border: 1px solid black;
     margin: auto;
 }
 
 #monster{
+    background: url(img/walk-monster.png) right center;
+    background-size: 715px 50px;
     width: 50px;
     height: 50px;
-    background-image: url(img/potato.png);
-    background-size: 50px 50px;
-
-    position: relative;
-    top: 150px;
+    position: relative; right: -40px;
+    top: 240px;
 }
 
+@keyframes walk-monster {
+  100% {background-position: 654px; }
+  }
+
+@keyframes jump {
+    0% {
+        top:140px;
+    }
+    30% {
+        top: 90px;
+    }
+    50% {
+        top: 60px;
+    }
+    80% {
+        top: 90px;
+    }
+    100% {
+        top: 130px;
+    }
+}
+
+.walk{
+    animation: walk-monster 1s steps(12) infinite;
+}
+
+.jump{
+    animation: jump 0.3s linear;
+}
