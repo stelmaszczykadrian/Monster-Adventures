@@ -22,19 +22,19 @@
 
 @keyframes jump {
     0% {
-        top:140px;
+        top: 240px;
     }
     30% {
-        top: 90px;
+        top: 150px;
     }
     50% {
         top: 60px;
     }
     80% {
-        top: 90px;
+        top: 150px;
     }
     100% {
-        top: 130px;
+        top: 240px;
     }
 }
 
@@ -51,14 +51,14 @@ h1 {
 }
 
 #stone {
-    height: 120px;
-    width:100px;
+    height: 80px;
+    width: 50px;
     position: relative;
-    top: 140px;
+    top: 170px;
     left: 620px;
     background: url(img/rocks/rock2.png) right center;
     background-size: cover;
-    animation: stone 2s infinite;
+    animation: stone 2.5s infinite;
 }
 
 /*@keyframes stone {*/
