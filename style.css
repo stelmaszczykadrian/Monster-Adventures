@@ -1,14 +1,23 @@
 .game{
     background-image: url(img/forest.png);
-    background-size: 700px 300px;
-    width: 700px;
+    background-size: 1000px 300px;
+    width: 1000px;
     height: 300px;
     border: 1px solid black;
     margin: auto;
 }
 
+/*.game{*/
+/*    background-image: url(img/background2.jpg);*/
+/*    background-size: 700px 300px;*/
+/*    width: 700px;*/
+/*    height: 300px;*/
+/*    border: 1px solid black;*/
+/*    margin: auto;*/
+/*}*/
+
+
 #monster{
-    /*background: url(img/monster.png) right center;*/
     background-size: 715px 50px;
     width: 50px;
     height: 50px;
@@ -36,13 +45,13 @@
     }
 }
 .carrot{
-    background: url("img/carrot.png");
+    background: url("./img/carrot.png");
 }
-.boy{
-    background: url("img/boy.png");
+.zombie{
+    background: url("./img/zombie.png");
 }
 .monster{
-    background: url("img/monster.png");
+    background: url("./img/monster.png");
 }
 .walk{
     animation: walk 1s steps(12) infinite;
@@ -62,14 +71,14 @@
     width: 70px;
     position: relative;
     top: 170px;
-    left: 650px;
+    left: 950px;
     background: url(img/rocks/rock2.png) right center;
     background-size: cover;
-    animation: stone 8s infinite;
+    animation: stone 3s infinite;
 }
 
 @keyframes stone {
-    0% {left: 650px;}
+    0% {left: 950px;}
     100%{left: -100px;}
 }
 
@@ -80,7 +89,7 @@
 .authors {
     margin-top: 20px;
     padding: 40px;
-    text-align: right;
+    text-align: left;
 }
 
 .authors .creators {
@@ -88,4 +97,61 @@
     font-weight: bold;
     font-size: large;
     color: saddlebrown;
+}
+
+.main-menu {
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.main-menu .divider {
+    display: inline-block;
+    width: 10px;
+    position: relative;
+    height: 12px;
+    margin: 0 10px;
+}
+.main-menu .divider:after {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 2px;
+    background-color: #212529;
+    position: absolute;
+    left: 0;
+    top: 5px;
+}
+
+.main-menu a {
+    color: #212529;
+}
+
+.front_title {
+    text-align: center;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-bottom: 20px;
+  margin-right: 50px;
+  width: auto;
+}
+
+.column {
+  float: left;
+  width: 40%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.text-center {
+    margin-top: 60px;
+    margin-bottom: 50px;
 }
