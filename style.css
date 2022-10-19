@@ -61,10 +61,10 @@
     animation: stone 3s infinite;
 }
 
-@keyframes stone {
-    0% {left: 950px;}
-    100%{left: -100px;}
-}
+/*@keyframes stone {*/
+/*    0% {left: 950px;}*/
+/*    100%{left: -100px;}*/
+/*}*/
 
 #background_body {
     background-color: lightsteelblue;
@@ -81,4 +81,38 @@
     font-weight: bold;
     font-size: large;
     color: saddlebrown;
+}
+
+
+.main-menu {
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.main-menu .divider {
+    display: inline-block;
+    width: 10px;
+    position: relative;
+    height: 12px;
+    margin: 0 10px;
+}
+.main-menu .divider:after {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 2px;
+    background-color: #212529;
+    position: absolute;
+    left: 0;
+    top: 5px;
+}
+
+.main-menu a {
+    color: #212529;
+}
+
+.front_title {
+    text-align: center;
 }
