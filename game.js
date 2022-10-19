@@ -27,10 +27,15 @@ document.addEventListener("keydown", function (event){
 });
 document.getElementById('monster').style.left = '50px'
 function right (){
-    document.getElementById('monster').style.left = parseInt(document.getElementById('monster').style.left) + 10 + "px";
+    if (parseInt(document.getElementById('monster').style.left) < 950) {
+        document.getElementById('monster').style.left = parseInt(document.getElementById('monster').style.left) + 10 + "px";
+    }
 }
 function left(){
-    document.getElementById('monster').style.left = parseInt(document.getElementById('monster').style.left) - 10 + "px";
+    if (parseInt(document.getElementById('monster').style.left) > 0) {
+        document.getElementById('monster').style.left = parseInt(document.getElementById('monster').style.left) - 10 + "px";
+    }
+
 
 }
 
