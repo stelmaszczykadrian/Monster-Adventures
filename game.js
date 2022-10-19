@@ -3,6 +3,14 @@ initGame();
 let monster = document.getElementById("monster");
 const stone = document.getElementById("stone")
 const score = document.getElementById("score")
+let select = document.getElementById("character").value
+select = "img/carrot.png"
+
+
+
+monster.classList.add("boy")
+
+
 
 function jump (){
     if (monster.classList != "jump") {
@@ -16,6 +24,8 @@ function jump (){
 
 document.addEventListener("keydown", function (event){
      if (event.code === 'Space'){
+         console.log(select)
+         console.log(monster)
          jump();
      }
      else if (event.code === "ArrowLeft") {
