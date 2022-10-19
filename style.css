@@ -83,12 +83,6 @@
     color: saddlebrown;
 }
 
-/*#Adrian {*/
-/*    background: url(img/authors/adrian.png) right center;*/
-/*    height: 283px;*/
-/*    width: 238px;*/
-/*}*/
-
 .main-menu {
     width: 100%;
     text-align: center;
@@ -120,4 +114,28 @@
 
 .front_title {
     text-align: center;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-bottom: 20px;
+  margin-right: 50px;
+  width: auto;
+}
+
+.column {
+  float: left;
+  width: 40%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.text-center {
+    margin-top: 60px;
+    margin-bottom: 50px;
 }
