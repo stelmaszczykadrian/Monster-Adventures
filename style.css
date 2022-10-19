@@ -14,6 +14,7 @@
     height: 50px;
     position: relative; right: -40px;
     top: 240px;
+    left: 50px;
 }
 
 @keyframes walk-monster {
@@ -35,6 +36,7 @@
     }
 }
 
+
 .walk{
     animation: walk-monster 1s steps(12) infinite;
 }
@@ -53,14 +55,14 @@
     width: 70px;
     position: relative;
     top: 170px;
-    left: 620px;
+    left: 650px;
     background: url(img/rocks/rock2.png) right center;
     background-size: cover;
-    animation: stone 2.1s infinite;
+    animation: stone 3s infinite;
 }
 
 @keyframes stone {
-    0% {left: 620px;}
+    0% {left: 650px;}
     100%{left: -100px;}
 }
 
