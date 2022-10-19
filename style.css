@@ -1,19 +1,92 @@
 .game{
     background-image: url(img/forest.png);
-    background-size: 600px 200px;
-    width: 600px;
-    height: 200px;
+    background-size: 700px 300px;
+    width: 700px;
+    height: 300px;
     border: 1px solid black;
     margin: auto;
 }
 
+/*.game{*/
+/*    background-image: url(img/background2.jpg);*/
+/*    background-size: 700px 300px;*/
+/*    width: 700px;*/
+/*    height: 300px;*/
+/*    border: 1px solid black;*/
+/*    margin: auto;*/
+/*}*/
+
+
 #monster{
+    background: url(img/walk-monster.png) right center;
+    background-size: 715px 50px;
     width: 50px;
     height: 50px;
-    background-image: url(img/potato.png);
-    background-size: 50px 50px;
-
-    position: relative;
-    top: 150px;
+    position: relative; right: -40px;
+    top: 240px;
 }
 
+@keyframes walk-monster {
+  100% {background-position: 654px; }
+  }
+
+@keyframes jump {
+    0% {
+        top: 240px;
+    }
+    30% {
+        top: 80px;
+    }
+    70% {
+        top: 80px;
+    }
+    100% {
+        top: 240px;
+    }
+}
+
+.walk{
+    animation: walk-monster 1s steps(12) infinite;
+}
+
+.jump{
+    animation: jump 500ms;
+}
+
+.scoreText {
+    margin-top: 30px;
+    text-align: center;
+}
+
+#stone {
+    height: 80px;
+    width: 70px;
+    position: relative;
+    top: 170px;
+    left: 650px;
+    background: url(img/rocks/rock2.png) right center;
+    background-size: cover;
+    animation: stone 2.1s infinite;
+}
+
+@keyframes stone {
+    0% {left: 650px;}
+    100%{left: -100px;}
+}
+
+#background_body {
+    background-color: lightsteelblue;
+}
+
+.authors {
+    margin-top: 20px;
+    padding: 40px;
+    text-align: right;
+}
+
+.authors .creators {
+    font-family: monospace;
+    font-weight: bold;
+    font-size: large;
+    color: saddlebrown;
+}
