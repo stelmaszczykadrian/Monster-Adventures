@@ -1,13 +1,33 @@
-initGame();
 
-let monster = document.getElementById("monster");
+let monster = document.getElementById("monster")
 const stone = document.getElementById("stone")
 const score = document.getElementById("score")
 
-function jump (){
-    if (monster.classList != "jump") {
-        monster.classList.add("jump");
+loop:
+while(true){
+    const select = prompt("Your character: \n 1. ANGRY CARROT \n 2. ZOMBIE \n 3. SPIDER")
+    switch (select) {
+        case "1":
+            monster.classList.add("carrot")
+            break loop
 
+        case "2":
+            monster.classList.add("zombie")
+            break loop
+        case "3":
+            monster.classList.add("monster")
+            break loop
+        default: alert("Please enter a valid character")
+    } }
+
+
+initGame()
+
+function initGame() {
+
+   function jump (){
+    if (monster.classList !== "jump") {
+        monster.classList.add("jump");
         setTimeout(function () {
             monster.classList.remove("jump")
         }, 500);
@@ -16,6 +36,7 @@ function jump (){
 
 document.addEventListener("keydown", function (event){
      if (event.code === 'Space'){
+
          jump();
      }
      else if (event.code === "ArrowLeft") {
@@ -40,9 +61,7 @@ var checkIfLoose = setInterval(function(){
     score.innerText++;
     let monsterTop = parseInt(window.getComputedStyle(monster).getPropertyValue('top'));
     let monsterLeft = parseInt(window.getComputedStyle(monster).getPropertyValue('left'))
-    console.log(monsterLeft)
     let stoneLeft = parseInt(window.getComputedStyle(stone).getPropertyValue('left'));
-    console.log(stoneLeft)
     if (stoneLeft < 0) {
         stone.style.display = 'none';
     }
@@ -54,10 +73,6 @@ var checkIfLoose = setInterval(function(){
         location.reload()
     }
  },10);
-
-function initGame() {
-
-
 
 
     // Your game can start here, but define separate functions, don't write everything in here :)
