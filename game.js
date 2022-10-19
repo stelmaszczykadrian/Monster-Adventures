@@ -35,30 +35,25 @@ function left(){
     if (parseInt(document.getElementById('monster').style.left) > 0) {
         document.getElementById('monster').style.left = parseInt(document.getElementById('monster').style.left) - 10 + "px";
     }
-
-
 }
-
 var checkIfLoose = setInterval(function(){
     score.innerText++;
     let monsterTop = parseInt(window.getComputedStyle(monster).getPropertyValue('top'));
+    let monsterLeft = parseInt(window.getComputedStyle(monster).getPropertyValue('left'))
+    console.log(monsterLeft)
     let stoneLeft = parseInt(window.getComputedStyle(stone).getPropertyValue('left'));
+    console.log(stoneLeft)
     if (stoneLeft < 0) {
         stone.style.display = 'none';
     }
         else {
             stone.style.display = '';
-
         }
-    if (stoneLeft>40 && stoneLeft<90 && monsterTop>=170){
+    if (stoneLeft<=monsterLeft+50 && stoneLeft>=monsterLeft && monsterTop>=170){
         alert("Your score is: " + score.innerText +"\nDo you want play again?");
         location.reload()
     }
  },10);
-
-
-
-
 
 function initGame() {
 
