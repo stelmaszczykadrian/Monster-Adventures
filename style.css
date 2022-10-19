@@ -73,7 +73,7 @@
 .authors {
     margin-top: 20px;
     padding: 40px;
-    text-align: right;
+    text-align: left;
 }
 
 .authors .creators {
@@ -83,6 +83,11 @@
     color: saddlebrown;
 }
 
+/*#Adrian {*/
+/*    background: url(img/authors/adrian.png) right center;*/
+/*    height: 283px;*/
+/*    width: 238px;*/
+/*}*/
 
 .main-menu {
     width: 100%;

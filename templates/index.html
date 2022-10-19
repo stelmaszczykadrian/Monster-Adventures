@@ -6,27 +6,26 @@
 
     <!-- http://proger.i-forge.net/The_smallest_transparent_pixel/ -->
     <link rel="icon" href="data:image/gif;base64,R0lGODlhAQABAAAAACwAAAAAAQABAAA=">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
+
+<body id="background_body">
 <header>
     <h1 class="front_title">Spider Adventures</h1>
     <div>
         <nav class="main-menu">
-            <a href="#">HOME</a>
+            <a href="index.html">HOME</a>
             <span class ="divider"></span>
-            <a href="#">GAME</a>
+            <a href="team.html">TEAM</a>
             <span class ="divider"></span>
-            <a href="/team.html">TEAM</a>
+            <a href="highscores.html">HIGHSCORES</a>
             <span class ="divider"></span>
-            <a href="#">HIGHSCORES</a>
-            <span class ="divider"></span>
-            <a href="#">CONTACT US</a>
+            <a href="contact.html">CONTACT US</a>
         </nav>
     </div>
 </header>
-<body id="background_body">
 
-    <div class="game">
+<div class="game">
         <div class="walk" id="monster"></div>
         <div id="stone"></div>
     </div>
@@ -34,14 +33,8 @@
         <h3 class="scoreText">Your score is:</h3>
         <h1 class="scoreText" id="score">0</h1>
     </div>
-<script src="game.js"></script>
-<!--    <div class="authors">-->
-<!--        <div class="creators">Made by:</div>-->
-<!--            <p class="creators">Asia Smolińska</p>-->
-<!--            <p class="creators">Adrian Stelmaszczyk</p>-->
-<!--            <p class="creators">Grzegorz Reizer</p>-->
-<!--            <p class="creators">Piotr Łozdowski</p>-->
-<!--    </div>-->
+
+<script src="../game.js"></script>
 </body>
 
 </html>
