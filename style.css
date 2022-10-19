@@ -7,6 +7,16 @@
     margin: auto;
 }
 
+/*.game{*/
+/*    background-image: url(img/background2.jpg);*/
+/*    background-size: 700px 300px;*/
+/*    width: 700px;*/
+/*    height: 300px;*/
+/*    border: 1px solid black;*/
+/*    margin: auto;*/
+/*}*/
+
+
 #monster{
     background: url(img/walk-monster.png) right center;
     background-size: 715px 50px;
@@ -53,14 +63,14 @@
     width: 70px;
     position: relative;
     top: 170px;
-    left: 620px;
+    left: 650px;
     background: url(img/rocks/rock2.png) right center;
     background-size: cover;
     animation: stone 2.1s infinite;
 }
 
 @keyframes stone {
-    0% {left: 620px;}
+    0% {left: 650px;}
     100%{left: -100px;}
 }
 

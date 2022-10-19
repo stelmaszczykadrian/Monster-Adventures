@@ -37,10 +37,6 @@ var checkIfLoose = setInterval(function(){
     }
  },10);
 
-
-
-
-
 function initGame() {
 
 
