@@ -1,6 +1,7 @@
 initGame();
 
 let monster = document.getElementById("monster");
+let startMessage = document.querySelector("#start-message");
 const stone = document.getElementById("stone")
 const score = document.getElementById("score")
 
@@ -14,17 +15,26 @@ function jump (){
     }
 }
 
+function start() {
+    document.getElementById('stone').style.animation = 'stone 3s infinite'
+    startMessage.classList.add("hide");
+}
+
 document.addEventListener("keydown", function (event){
      if (event.code === 'Space'){
          jump();
+         start();
      }
      else if (event.code === "ArrowLeft") {
         left();
+        start();
     }
     else if (event.code === 'ArrowRight') {
         right();
+        start();
     }
 });
+
 document.getElementById('monster').style.left = '50px'
 function right (){
     if (parseInt(document.getElementById('monster').style.left) < 950) {
@@ -36,21 +46,21 @@ function left(){
         document.getElementById('monster').style.left = parseInt(document.getElementById('monster').style.left) - 10 + "px";
     }
 }
+
 var checkIfLoose = setInterval(function(){
-    score.innerText++;
     let monsterTop = parseInt(window.getComputedStyle(monster).getPropertyValue('top'));
     let monsterLeft = parseInt(window.getComputedStyle(monster).getPropertyValue('left'))
-    console.log(monsterLeft)
     let stoneLeft = parseInt(window.getComputedStyle(stone).getPropertyValue('left'));
-    console.log(stoneLeft)
     if (stoneLeft < 0) {
         stone.style.display = 'none';
+        score.innerText++
     }
         else {
             stone.style.display = '';
+
         }
     if (stoneLeft<=monsterLeft+50 && stoneLeft>=monsterLeft && monsterTop>=170){
-        alert("Your score is: " + score.innerText +"\nDo you want play again?");
+        alert("You jumped : " + score.innerText + " stones" + "\nDo you want to jump again?");
         location.reload()
     }
  },10);
