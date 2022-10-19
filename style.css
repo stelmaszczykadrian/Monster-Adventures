@@ -7,6 +7,16 @@
     margin: auto;
 }
 
+/*.game{*/
+/*    background-image: url(img/background2.jpg);*/
+/*    background-size: 700px 300px;*/
+/*    width: 700px;*/
+/*    height: 300px;*/
+/*    border: 1px solid black;*/
+/*    margin: auto;*/
+/*}*/
+
+
 #monster{
     background: url(img/walk-monster.png) right center;
     background-size: 715px 50px;
