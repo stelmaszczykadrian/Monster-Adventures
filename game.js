@@ -1,6 +1,7 @@
 
 let monster = document.getElementById("monster");
 let startMessage = document.querySelector("#start-message");
+let sound_jump = new Audio("../audio/jump.mp3")
 const stone = document.getElementById("stone")
 const score = document.getElementById("score")
 
@@ -42,7 +43,7 @@ function start() {
 
 document.addEventListener("keydown", function (event){
      if (event.code === 'Space'){
-
+         sound_jump.play()
          jump();
          start();
      }
