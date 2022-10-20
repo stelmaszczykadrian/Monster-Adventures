@@ -3,7 +3,6 @@ let monster = document.getElementById("monster");
 let startMessage = document.querySelector("#start-message");
 const stone = document.getElementById("stone")
 const score = document.getElementById("score")
-let highscores = document.getElementById("highscores")
 
 loop:
 while(true){
@@ -81,9 +80,6 @@ var checkIfLoose = setInterval(function(){
         }
     if (stoneLeft<=monsterLeft+50 && stoneLeft>=monsterLeft && monsterTop>=170){
         alert("You jumped : " + score.innerText + " stones" + "\nDo you want to jump again?");
-        if (score>highscores) {
-            highscores=score
-        }
         location.reload()
     }
  },10);
