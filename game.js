@@ -2,6 +2,7 @@
 let monster = document.getElementById("monster");
 let startMessage = document.querySelector("#start-message");
 let sound_jump = new Audio("../audio/jump.mp3")
+let sound_forest = new Audio("../audio/forest.mp3")
 const stone = document.getElementById("stone")
 const score = document.getElementById("score")
 
@@ -38,10 +39,13 @@ function initGame() {
 function start() {
     document.getElementById('stone').style.animation = 'stone 3s infinite'
     startMessage.classList.add("hide");
+    sound_forest.loop = true
+    sound_forest.play()
 }
 
 document.addEventListener("keydown", function (event){
      if (event.code === 'Space'){
+         sound_jump.volume = 0.2
          sound_jump.play()
          jump();
          start();
