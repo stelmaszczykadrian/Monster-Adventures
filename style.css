@@ -88,7 +88,7 @@
 .authors {
     margin-top: 0px;
     padding: 40px;
-    text-align: left;
+    text-align: justify;
 }
 
 .authors .creators {
@@ -98,6 +98,26 @@
     color: saddlebrown;
 }
 
+
+.home-description {
+    font-family: monospace;
+    font-weight: bold;
+    font-size: large;
+    color: black;
+}
+.do-you-want {
+    margin-top: 70px;
+    color: black;
+    font-weight: bolder;
+    font-size: x-large ;
+    text-align: center;
+}
+.good-luck {
+    color: black;
+    font-weight: bolder;
+    font-size: x-large ;
+    text-align: center;
+}
 .main-menu {
     width: 100%;
     text-align: center;
@@ -282,4 +302,8 @@ textarea{
 
 .hide {
   display: none;
+}
+
+#home-game-image {
+    text-align: center;
 }
