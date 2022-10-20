@@ -40,9 +40,7 @@ var checkIfLoose = setInterval(function(){
     score.innerText++;
     let monsterTop = parseInt(window.getComputedStyle(monster).getPropertyValue('top'));
     let monsterLeft = parseInt(window.getComputedStyle(monster).getPropertyValue('left'))
-    console.log(monsterLeft)
     let stoneLeft = parseInt(window.getComputedStyle(stone).getPropertyValue('left'));
-    console.log(stoneLeft)
     if (stoneLeft < 0) {
         stone.style.display = 'none';
     }

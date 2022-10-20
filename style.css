@@ -71,10 +71,10 @@
     animation: stone 3s infinite;
 }
 
-/*@keyframes stone {*/
-/*    0% {left: 950px;}*/
-/*    100%{left: -100px;}*/
-/*}*/
+@keyframes stone {
+    0% {left: 950px;}
+    100%{left: -100px;}
+}
 
 #background_body {
     background-color: lightsteelblue;
