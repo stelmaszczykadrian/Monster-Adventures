@@ -18,7 +18,6 @@
 
 
 #monster{
-    background: url(img/walk-monster.png) right center;
     background-size: 715px 50px;
     width: 50px;
     height: 50px;
@@ -27,7 +26,7 @@
     left: 50px;
 }
 
-@keyframes walk-monster {
+@keyframes walk {
   100% {background-position: 654px; }
   }
 
@@ -45,10 +44,17 @@
         top: 240px;
     }
 }
-
-
+.carrot{
+    background: url("./img/carrot.png");
+}
+.zombie{
+    background: url("./img/zombie.png");
+}
+.monster{
+    background: url("./img/monster.png");
+}
 .walk{
-    animation: walk-monster 1s steps(12) infinite;
+    animation: walk 1s steps(12) infinite;
 }
 
 .jump{
