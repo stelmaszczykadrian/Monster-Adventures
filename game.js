@@ -22,7 +22,6 @@ while(true){
         default: alert("Please enter a valid character")
     } }
 
-
 initGame()
 
 function initGame() {
@@ -43,7 +42,6 @@ function start() {
 
 document.addEventListener("keydown", function (event){
      if (event.code === 'Space'){
-
          jump();
          start();
      }
@@ -89,10 +87,6 @@ var checkIfLoose = setInterval(function(){
         location.reload()
     }
  },10);
-
-
-    // Your game can start here, but define separate functions, don't write everything in here :)
-
 }
 
 
