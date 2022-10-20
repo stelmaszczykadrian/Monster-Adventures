@@ -22,7 +22,6 @@ while(true){
         default: alert("Please enter a valid character")
     } }
 
-
 initGame()
 
 function initGame() {
@@ -86,10 +85,6 @@ var checkIfLoose = setInterval(function(){
         location.reload()
     }
  },10);
-
-
-    // Your game can start here, but define separate functions, don't write everything in here :)
-
 }
 
 
